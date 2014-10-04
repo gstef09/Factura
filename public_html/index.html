@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Factura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/estilo.css"/>
+        
+    </head>
+
+    <body>
+        
+        <form id="frmFactura">
+            <div id="cabeceraFactura">
+               
+           <label id="lbl">N Factura</label>
+          <input type="text" id="txtnumfact" value="FAC-000001"/>
+            <br>
+            
+            <label id="lbl">Nombre</label>
+           <input type="text" id="txtnomcli" />
+            <br>
+            <label id="lbl">CI / RUC</label>
+           <input type="text" id="txcedula" />
+           <br>
+           <label id="lbl">Fecha:</label>
+            <input type='date' id='txtFecha' /><br>
+            </div>
+            <br>
+            <br>
+            
+                <table id ="detalle" border="2" width="3" cellspacing="2" cellpadding="1">
+            <thead>
+                    <tr>
+                        <th >Código</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Valor Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>  <input  class="cod"type='number' id='txtCod1' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip1' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant1' /><br></td>
+                        <td><input class="vunit"type='number' id='txtValUni1'/><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro1' value='0' disabled=""/><br></td>
+                    </tr>
+                    <tr>
+                        <td>  <input class="cod" type='number' id='txtCod2' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip2' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant2' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni2'/><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro2' value='0' disabled=""/><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod3' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip3' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant3' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni3' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro3' value='0' disabled="" /><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod4' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip4' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant4' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni4' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro4' value='0' disabled="" /><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod5' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip5' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant5' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni5' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro5' value='0' disabled="" /><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod6' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip6' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant6' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni6' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro6'  value='0' disabled=""/><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod7'/><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip7' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant7' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni7' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro7' value='0' disabled=""/><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod8'/><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip8' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant8' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni8'/><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro8' value='0' disabled="" /><br></td>
+                    </tr>
+                    <tr>
+                         <td> <input class="cod" type='number' id='txtCod9' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip9' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant9' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni9' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro9' value='0' disabled="" /><br></td>
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod10' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip10' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant10' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni10' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro10' value='0' disabled="" /><br></td>
+                        
+                    </tr>
+                    <tr>
+                         <td>  <input class="cod" type='number' id='txtCod11' /><br> </td>
+                        <td><input class="descrip" type='text' id='txtDescrip11' value=' '/><br></td>
+                        <td><input class="cant" type='number' id='txtCant11' /><br></td>
+                        <td><input class="vunit" type='number' id='txtValUni11' /><br></td>
+                        <td><input class="totPro" type='number' id='txtTotalPro11' value='0' disabled="" /><br></td>
+                    </tr>
+                   
+                   
+                   
+                </tbody>
+                <br>
+                <br>
+            </table>
+         
+               <div class="Resultados">
+                               
+            
+                 <br>
+                 <table id ="valorPagar" border="2" width="3" cellspacing="2" cellpadding="1">
+                     
+                     <tr>
+                         <td><label id="lbl">SubTotal</label></td>
+                         <td><input class="totPro" id="txtSubTotal" value='0' disabled="" type ="number"> </td>
+                     </tr>
+                     
+                     <tr>
+                         <td><label id="lbl">IVA</label></td>
+                         <td><input class="totPro" id="txtIva" value='0' disabled="" type="number" ></td>
+                     </tr>
+                     <tr>
+                         <td><label id="lbl" >Descuento</label></td>
+                         <td><input class="totPro" id="txtDesc" value='0' type ="number"></td>
+                     </tr>
+                     <tr>
+                         <td>
+                            <label id="lbl" >Total</label> 
+                         </td>
+                     <td><input class="totPro" id="txtTotal" value='0' disabled="" type ="number"></td>
+                     </tr>
+                     
+                     
+                     
+                 </table>
+        </form>
+    </body>
+</html>
+<script>
+    window.addEventListener("load",function() 
+    { 
+     
+         
+         
+        document.querySelector("input").addEventListener("change",function()
+        {
+            calculoSuma();
+           
+            
+        },false); 
+         
+        
+        
+        
+        for (var i = 1; i <=11; i++) {
+            document.querySelector("#txtValUni"+i).addEventListener("blur",function()
+            {
+                
+                 calculoSuma();
+            },false);         
+        
+        }
+       
+        
+        
+    }
+    ,false);
+    
+    function calculoSuma()
+    {   var descuento;
+        
+        
+        var suma=0;
+            for (i = 1; i <= 11; i++) {
+                 document.querySelector("#txtTotalPro"+i).value=
+                    ((parseFloat(document.querySelector("#txtCant"+i).value))  * (parseFloat(document.querySelector("#txtValUni"+i).value))).toFixed(2);
+            
+                suma+=parseFloat(document.querySelector("#txtTotalPro"+i).value );
+                
+            }
+            document.querySelector("#txtDesc").addEventListener("blur",function(){
+               descuento =suma * parseFloat(document.querySelector("#txtDesc").value)/100;
+            document.querySelector("#txtSubTotal").value=  suma ;
+            document.querySelector("#txtIva").value=  ((suma-descuento )*0.12) ;
+            document.querySelector("#txtTotal").value=
+                    (parseFloat( document.querySelector("#txtSubTotal").value)+
+                    parseFloat( document.querySelector("#txtIva").value)-
+                    parseFloat( document.querySelector("#txtDesc").value)).toFixed(2) ;
+            },false);
+            
+    }
+    
+    
+</script>
